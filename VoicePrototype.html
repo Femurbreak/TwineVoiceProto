@@ -11,7 +11,6 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play VoicePrototype.</tw-noscript></noscript></tw-story>
 <tw-storydata name="VoicePrototype" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="6C39EB93-3F10-419F-8424-B033ADD76035" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="475,325" size="100,100">Unolingo 
 
-
 (set: $Player to (prompt: &quot;What is your name?&quot;, &quot;&quot;))
 Welcome $Player, Press [[Start]] to begin your lesson !
 
@@ -19,16 +18,16 @@ Welcome $Player, Press [[Start]] to begin your lesson !
 
 How do you spell this word 
 [[Color]]
-(set: $Brittish to 1)
+
 [[Colour]]
-(set: $American to 1) </tw-passagedata><tw-passagedata pid="3" name="Color" tags="" position="350,575" size="100,100">Bald Eagle is happy 
+</tw-passagedata><tw-passagedata pid="3" name="Color" tags="" position="350,575" size="100,100">Bald Eagle is happy 
 
 How do you spell this word? 
 
 [[Flavour]]
-(set: $Brittish to 1)
+
 [[Flavor]]
-(set: $American to 2)
+
 
 
 </tw-passagedata><tw-passagedata pid="4" name="Colour" tags="" position="600,575" size="100,100">Bald Eagle is now slightly //brittish//
@@ -36,23 +35,23 @@ How do you spell this word?
 How do you spell this word?
 
 [[Flavour]]
-(set: $Brittish to 2)
+
 [[Flavor]]
-(set: $American to 1) </tw-passagedata><tw-passagedata pid="5" name="Flavour" tags="" position="600,775" size="100,100">Bald Eagle now adorns a hot hat and a monocle? 
+</tw-passagedata><tw-passagedata pid="5" name="Flavour" tags="" position="600,775" size="100,100">Bald Eagle now adorns a hot hat and a monocle? 
 
 How do you spell this work 
 
 [[Centre]]
- (set: $Brittish to 3)
+
 [[Center]]
-(set: $America to 1)</tw-passagedata><tw-passagedata pid="6" name="Flavor" tags="" position="350,775" size="100,100">Bald Eagle gets more patriotic 
+</tw-passagedata><tw-passagedata pid="6" name="Flavor" tags="" position="350,775" size="100,100">Bald Eagle gets more patriotic 
 
 How do you spell this word? 
 
 [[Centre]]
-(set: $Brittish to 1)
+
 [[Center]]
-(set: $America to 3) </tw-passagedata><tw-passagedata pid="7" name="Centre" tags="" position="725,1150" size="100,100">Bald Eagle looks very sad
+</tw-passagedata><tw-passagedata pid="7" name="Centre" tags="" position="725,1150" size="100,100">Bald Eagle looks very sad
 
 Time for Slang
 
@@ -66,25 +65,24 @@ Time for Slang and Lingo
 What do you call something you put trash/rubbish in?
 
 [[Dustbin]]
-(set: $Brittish to 4)
+
 [[Trash Can]]
-(set: $American to 3)</tw-passagedata><tw-passagedata pid="10" name="Dustbin" tags="" position="1375,600" size="100,100">Bald Eagle is drink tea, not happy about it 
+</tw-passagedata><tw-passagedata pid="10" name="Dustbin" tags="" position="1375,600" size="100,100">Bald Eagle is drink tea, not happy about it 
 
 What do you call someone who is very gorgeous? 
 
 [[Fit]]
-(set: $Brittish to 5)
 
 [[Hot]]
-(set: $American to 1)</tw-passagedata><tw-passagedata pid="11" name="Trash Can" tags="" position="1575,600" size="100,100">Bald Eagle now has a gun? 
+</tw-passagedata><tw-passagedata pid="11" name="Trash Can" tags="" position="1575,600" size="100,100">Bald Eagle now has a gun? 
 
 What do you call someone who is very gorgeous? 
 
 [[Fit]]
-(set: $Brittish to 5)
+
 
 [[Hot]]
-(set: $American to 1)
+
 
 </tw-passagedata><tw-passagedata pid="12" name="Fit" tags="" position="1375,750" size="100,100">Bald Eagle is now looming over you with a scone 
 
@@ -92,25 +90,37 @@ What do you call someone who is very gorgeous?
 What do you call a basket on wheels that carries groceries
 
 [[Shopping Trolley]]
-(set: $Brittish to 6)
+
 
 [[Shopping Cart]]
-(Set: $American to 6)</tw-passagedata><tw-passagedata pid="13" name="Hot" tags="" position="1575,750" size="100,100">Bald Eagle has ripped open his tank top to show another tank top with an american flag underneath, this is getting too crazy
+</tw-passagedata><tw-passagedata pid="13" name="Hot" tags="" position="1575,750" size="100,100">Bald Eagle has ripped open his tank top to show another tank top with an american flag underneath, this is getting too crazy
 
 What do you call a basket on wheels that carries groceries
 
 [[Shopping Trolley]]
-(set: $Brittish to 6)
 
 [[Shopping Cart]]
-(Set: $American to 6)</tw-passagedata><tw-passagedata pid="14" name="Shopping Trolley" tags="" position="1475,1100" size="100,100">Time for your Quiz
+</tw-passagedata><tw-passagedata pid="14" name="Shopping Trolley" tags="" position="1350,1100" size="100,100">Time for your Quiz
 
-[[Test Time]]</tw-passagedata><tw-passagedata pid="15" name="Shopping Cart" tags="" position="1775,1075" size="100,100">Time for your Quiz 
+[[Test Time]]</tw-passagedata><tw-passagedata pid="15" name="Shopping Cart" tags="" position="1600,1100" size="100,100">Time for your Quiz 
 
-[[Test Time]]</tw-passagedata><tw-passagedata pid="16" name="Test Time" tags="" position="2200,325" size="200,200">UHHH plot?
+[[Test Time]]</tw-passagedata><tw-passagedata pid="16" name="Test Time" tags="" position="2200,325" size="200,200">
+(set: $Answer to (prompt: &quot;How to you spell the American Version of the words that were shown to you at the beginning, in order of apperance?&quot;, &quot;&quot;))
+(if: $Answer is &quot;Color, Flavor, Center&quot;)[Well Done! Bald Eagle is pleased, [[Next Question]]] 
+(else:) [bald eagle is angry [[Try Again -&gt;Untitled Passage]]]
 
 
-(set: $Answer to (prompt: &quot;How to you spell the American Version of the words that were shown to you at the beginning&quot; &quot;&quot;)</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="17" name="Next Question" tags="" position="2300,600" size="100,100">(set: $Answer to (prompt: &quot;Now please spell them the British way, in order of their apperance to you&quot;, &quot;&quot;))
+(if: $Answer is &quot;Colour, Flavour, Centre&quot;)[Well Done! Bald Eagle is pleased, [[Next Question -&gt;New Question&#39;]]] 
+(else:) [bald eagle is angry [[Try Again -&gt;Untitled Passage]]]</tw-passagedata><tw-passagedata pid="18" name="New Question&#39;" tags="" position="2300,900" size="100,100">
+(set: $Answer to (prompt: &quot;Who is the correct way of spelling things? &quot;, &quot;&quot;))
+(if: $Answer is &quot;America&quot;)[Well Done! Bald Eagle is glad you are like him, A M E R I C A N [[you win!!]]] 
+(else:) [bald eagle is angry and kills you [[Try Again -&gt;Untitled Passage]]]
+</tw-passagedata><tw-passagedata pid="19" name="you win!!" tags="" position="2300,1025" size="100,100">Thanks for playing &lt;3
+
+Made by Cam, Flynn and Bella 
+
+GDS T3 2023</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
